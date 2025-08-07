@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #ff6f00;
+    --body-color: linear-gradient(to right, #121212, #1e1e1e);
+    --text-color: #f5f5f5;
+    --header-bg-color: #1e1e1e;
+    --link-hover-bg-color: #ff6f00;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #8b1b1b;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-image: url(/img/detalles-de-la-pelota-en-el-deporte.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #f5f5f5;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 3px solid #ff6f00;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+nav {
+  background: var(--header-bg-color);
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #f5f5f5;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav a:hover{
+    background-color: #ff6f00;
+    color: #121212;
+    border-radius: 5px;
+}
+
+  nav a.live-button {
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+  }
+
+  nav a.active {
+    background-color: var(--link-hover-bg-color);
+    color: var(--header-bg-color);
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  .live-dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    animation: pulse 1.2s infinite;
+    display: inline-block;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+nav select {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  border: 1px solid #ff6f00;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ff6f00;
+    border-radius: 5px;
+    width: 200px;
+}
+.search-container input[type="text"]:focus {
+    outline: none;
+    border-color: #ff6f00;
+}
+.search-container button {
+    padding: 10px 15px;
+    background-color: #ff6f00;
+    color: #121212;
+    border: none;
+    border-radius: 10%;
+    margin-left: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.search-container button:hover {
+    background-color: #e65c00;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.social-icons a {
+    color: var(--header-bg-color);
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #ff6f00;
+}
+
+footer {
+  background: #1e1e1e;
+  color: #f5f5f5;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-top: 3px solid #ff6f00;
+}
