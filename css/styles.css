@@ -18,8 +18,55 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
-    color: #8b1b1b;
+    color: var(--text-color);
 }
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--header-bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    border: none;
+}
+.button:hover {
+    background-color: #e65c0094;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.button-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: var(--header-bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    border: none;
+}
+.button-whatsapp:hover {
+    background-color: #1ebe5c;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.button-youtube{
+    display: inline-block;
+    background-color: #ca0000;
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    border: none;
+}
+.button-youtube:hover {
+    background-color: #ff0000;
+    color: var(--text-color);
+    text-decoration: none;}
 
 body {
   font-family: 'PT Sans', sans-serif;
@@ -95,6 +142,12 @@ nav a:hover{
     animation: pulse 1.2s infinite;
     display: inline-block;
   }
+  .live-section a.live-button{
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #ffffff;
+  }
 
   @keyframes pulse {
     0% {
@@ -161,7 +214,38 @@ nav select {
 .social-icons a:hover {
     color: #ff6f00;
 }
-
+.home-section, .service-section, .news-section, .players-section, .highlights-section, .schedule-section, .live-section, .about-section, .contact-section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 70rem;
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+.contact-form label {
+    font-weight: bold;
+  }
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ff6f00;
+    border-radius: 5px;
+    background: #121212;
+    color: #f5f5f5;
+  }
+  .contact-form .boton-enviar {
+    padding: 10px;
+    background-color: #ff6f00;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
 footer {
   background: #1e1e1e;
   color: #f5f5f5;

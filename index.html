@@ -26,14 +26,16 @@
         </div>
         <div class="social-icons">
             <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.youtube.com/@Basquet-TV" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/basquet.tv/" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>     
+            <a href="https://www.youtube.com/@Basquet-TV" aria-label="YouTube" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/basquet.tv/" aria-label="Instagram" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
     </header>
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#service">Servicio de streaming</a></li>
             <li><a href="#news">Noticias</a></li>
             <!--<select>
@@ -43,32 +45,66 @@
                     <option value="acb">ACB</option>
                     <option value="lnb">LNB</option>
                     <option value="wnba">WNBA</option>
-                </select>-->
+            </select>-->
             <li><a href="#highlights">Highlights</a></li>
             <li><a href="#players">Mejores jugadores/as</a></li>
             <li><a href="#about">Acerca de</a></li>
             <li><a href="#contact">Contacto</a></li>
-            <li><a href="#live" id="auto-toggle-btn" class="live-button"><span class="live-dot"></span> En Vivo </a></li>
+            <li><a href="#live" id="auto-toggle-btn" class="live-button"><span class="live-dot"></span> En Vivo </a>
+            </li>
         </ul>
     </nav>
 
     <main>
-        <section id="home">
-            <h2>Bienvenidos a Basquet Onfire</h2>
-            <p>This is a simple HTML page demonstrating basic structure and styling.</p>
-            <p>Feel free to explore the links in the navigation menu.</p>
-            <article>
-                <h3>Latest News</h3>
-                <p>Check out the latest updates from the NBA and other basketball leagues around the world.</p>
-                <ul>
-                    <li><a href="#">NBA Finals Highlights</a></li>
-                    <li><a href="#">Top Players of the Season</a></li>
-                    <li><a href="#">Upcoming Matches</a></li>
-                </ul>
-            </article>
+        <section id="home" class="home-section">
+            <h2>Bienvenidos a Basquet-TV</h2>
+            <p>Basquet TV es una plataforma dedicada a la difusión y transmisión de partidos de básquet a través de
+                streaming. Nuestro objetivo es promover este deporte brindando cobertura en vivo de encuentros locales,
+                regionales y nacionales.</p>
+
+            <p>Además, ofrecemos el servicio de transmisión profesional para eventos deportivos, tanto de instituciones
+                como de organizaciones particulares, garantizando calidad, alcance y visibilidad para cada evento.
+            </p>
+            <p>Ya seas parte de un club, una liga o estés organizando un torneo, en Basquet TV te ayudamos a que tu
+                evento se vea en todas partes.</p>
+
+            <p>En nuestra plataforma encontrarás noticias, análisis, entrevistas y mucho más sobre el mundo del
+                básquetbol. Nos apasiona este deporte y queremos compartirlo contigo.</p><br>
+
+            <a href="#contact" class="button">
+                Contactanos
+            </a>
+            <a href="https://www.youtube.com/@Basquet-TV" class="button-youtube">
+                <i class="fab fa-youtube"></i>
+                Suscribite a Nuestro Canal</a>
+            </section>
+
+        <section id="service" class="service-section">
+            <h2>🎥 Servicio de Streaming Deportivo</h2>
+            <h3>Transmití tus eventos deportivos en vivo con calidad profesional.</h3><br>
+            <p>
+                En <strong>Basquet TV</strong> ofrecemos un servicio de <strong>streaming personalizado</strong> para
+                clubes, torneos, partidos y eventos particulares.
+                Nos encargamos de toda la producción audiovisual, desde la grabación hasta la transmisión en vivo a
+                través de plataformas como YouTube, Facebook o tu propio sitio web.       
+            </p><br>
+            <p>Llevá tu deporte a todo el público, en cualquier lugar.</p>
+            <p class="features">
+                📡 Cobertura en vivo &nbsp; | &nbsp; Producción profesional &nbsp; | &nbsp; Difusión asegurada
+            </p>
+
+            <img src="" alt="">
+
+            <br>
+
+            <a href="https://wa.me/5491162661506?text=Hola,%20Quiero%20cotizar%20un%20Servicio%20de%20Transmisión"
+                class="button-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+                Solicita más información
+            </a>
         </section>
 
-        <section id="news">
+        <section id="news" class="news-section">
             <h2>Latest News</h2>
             <article>
                 <h3>NBA Finals Highlights</h3>
@@ -84,7 +120,7 @@
             </article>
         </section>
 
-        <section id="players">
+        <section id="players" class="players-section">
             <h2>Top Players</h2>
             <ul>
                 <li><a href="#">LeBron James</a></li>
@@ -92,7 +128,7 @@
                 <li><a href="#">Stephen Curry</a></li>
             </ul>
         </section>
-        <section id="highlights">
+        <section id="highlights" class="highlights-section">
             <h2>Game Highlights</h2>
             <p>Watch the best plays from recent games.</p>
             <ul>
@@ -101,8 +137,8 @@
                 <li><a href="#">Game 3 Highlights</a></li>
             </ul>
         </section>
-        <section id="schedule">
-            <h2>Match Schedule</h2>
+        <section id="schedule" class="schedule-section">
+            <h2>Proximos Eventos - Partidos</h2>
             <p>Check out the schedule for upcoming matches.</p>
             <ul>
                 <li>Monday: Team A vs Team B</li>
@@ -110,14 +146,38 @@
                 <li>Wednesday: Team E vs Team F</li>
             </ul>
         </section>
-        <section id="about">
+        <section id="live" class="live-section">
+            <h2>Partidos en Vivo</h2>
+            <p>"¡Disfruta de partidos de baloncesto en directo aquí!"</p>
+            <a href="#" class="live-button"><span class="live-dot"></span> En Vivo </a>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/d8TPWF5Os9c?si=e0czrfcvf14-JcIR"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
             <h2>About Us</h2>
             <p>We are passionate about basketball and aim to provide the latest news and updates.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions, feel free to reach out via email or social media.</p>
+        <section id="contact" class="contact-section">
+            <h2>Contacto</h2>
+            <p>Si tenés alguna pregunta, no dudes en contactarme</p>
+            <form id="contact" action="" class="contact-form">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </form>
         </section>
 
     </main>
