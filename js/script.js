@@ -21,3 +21,5 @@
   // Se detiene cuando el mouse entra o el enlace recibe foco
   btn.addEventListener('mouseenter', stopBlinking);
   btn.addEventListener('focus', stopBlinking);
+  // Se reinicia el parpadeo cuando el mouse sale o el enlace pierde foco
+  btn.addEventListener('mouseleave', startBlinking);

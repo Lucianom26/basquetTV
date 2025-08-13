@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Basquet TV</title>
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
@@ -21,7 +21,7 @@
             <img src="img/447444255_1471940896743931_3369075468787516659_n.jpg" alt="Basquet TV Logo" class="logo">
         </div>
         <div class="search-container">
-            <input type="text" placeholder="Buscar..." aria-label="Search">
+            <input type="text" placeholder="Buscar..." aria-label="Buscar contenido">
             <button type="submit"><i class="fas fa-search"></i></button>
         </div>
         <div class="social-icons">
@@ -30,25 +30,22 @@
                     class="fab fa-youtube"></i></a>
             <a href="https://www.instagram.com/basquet.tv/" aria-label="Instagram" target="_blank"><i
                     class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="Whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://wa.me/5493764730666?text=Hola,%20Quiero%20cotizar%20un%20Servicio%20de%20Transmisión"
+                aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
     </header>
+
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+        <ul id="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#service">Servicio de streaming</a></li>
             <li><a href="#news">Noticias</a></li>
-            <!--<select>
-                    <option value="default" selected disabled>Ligas</option>
-                    <option value="nba">NBA</option>
-                    <option value="euroleague">Euroleague</option>
-                    <option value="acb">ACB</option>
-                    <option value="lnb">LNB</option>
-                    <option value="wnba">WNBA</option>
-            </select>-->
-            <li><a href="#highlights">Highlights</a></li>
-            <li><a href="#players">Mejores jugadores/as</a></li>
-            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#highlights">Galería</a></li>
+            <li><a href="#players">Mejores Jugadores/as</a></li>
+            <li><a href="#about">Sobre Nosotros</a></li>
             <li><a href="#contact">Contacto</a></li>
             <li><a href="#live" id="auto-toggle-btn" class="live-button"><span class="live-dot"></span> En Vivo </a>
             </li>
@@ -56,56 +53,59 @@
     </nav>
 
     <main>
+        <!-- Home Section -->
         <section id="home" class="home-section">
-            <h2>Bienvenidos a Basquet-TV</h2>
+            <h2>Bienvenidos a Basquet‑TV</h2>
             <p>Basquet TV es una plataforma dedicada a la difusión y transmisión de partidos de básquet a través de
                 streaming. Nuestro objetivo es promover este deporte brindando cobertura en vivo de encuentros locales,
                 regionales y nacionales.</p>
-
-            <p>Además, ofrecemos el servicio de transmisión profesional para eventos deportivos, tanto de instituciones
-                como de organizaciones particulares, garantizando calidad, alcance y visibilidad para cada evento.
-            </p>
+            <p>Además, ofrecemos transmisión profesional para eventos deportivos, tanto institucionales como
+                particulares, garantizando calidad, alcance y visibilidad para cada evento.</p>
             <p>Ya seas parte de un club, una liga o estés organizando un torneo, en Basquet TV te ayudamos a que tu
                 evento se vea en todas partes.</p>
-
             <p>En nuestra plataforma encontrarás noticias, análisis, entrevistas y mucho más sobre el mundo del
-                básquetbol. Nos apasiona este deporte y queremos compartirlo contigo.</p><br>
-
-            <a href="#contact" class="button">
-                Contactanos
-            </a>
-            <a href="https://www.youtube.com/@Basquet-TV" class="button-youtube">
-                <i class="fab fa-youtube"></i>
-                Suscribite a Nuestro Canal</a>
-            </section>
-
-        <section id="service" class="service-section">
-            <h2>🎥 Servicio de Streaming Deportivo</h2>
-            <h3>Transmití tus eventos deportivos en vivo con calidad profesional.</h3><br>
-            <p>
-                En <strong>Basquet TV</strong> ofrecemos un servicio de <strong>streaming personalizado</strong> para
-                clubes, torneos, partidos y eventos particulares.
-                Nos encargamos de toda la producción audiovisual, desde la grabación hasta la transmisión en vivo a
-                través de plataformas como YouTube, Facebook o tu propio sitio web.       
-            </p><br>
-            <p>Llevá tu deporte a todo el público, en cualquier lugar.</p>
-            <p class="features">
-                📡 Cobertura en vivo &nbsp; | &nbsp; Producción profesional &nbsp; | &nbsp; Difusión asegurada
-            </p>
-
-            <img src="" alt="">
-
-            <br>
-
-            <a href="https://wa.me/5491162661506?text=Hola,%20Quiero%20cotizar%20un%20Servicio%20de%20Transmisión"
-                class="button-whatsapp" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-                Solicita más información
-            </a>
+                básquetbol. Nos apasiona este deporte y queremos compartirlo con vos.</p>
+            <a href="#contact" class="button">Contactanos</a>
+            <a href="https://www.youtube.com/@Basquet-TV" class="button-youtube" target="_blank"><i
+                    class="fab fa-youtube"></i> Suscribite a Nuestro Canal</a>
         </section>
 
+        <!-- Service Section -->
+        <section id="service" class="service-section">
+            <div class="logos-container">
+                <img src="/img/275257327_326738832847138_2604624344595190603_n.jpg" alt="Logo Richard Som"
+                    class="logo-img" title="Richard Som">
+                <img src="/img/logo-dev-web.jpg" alt="Logo DevWeb" class="logo-img" title="DevWeb">
+                <img src="/img/447444255_1471940896743931_3369075468787516659_n.jpg" alt="Logo Basquet TV"
+                    class="logo-img" title="Basquet TV">
+            </div>
+            <div class="service-content">
+                <h2>🎥 Servicio de Streaming Deportivo</h2>
+                <h3>Transmití tus eventos deportivos en vivo con calidad profesional.</h3>
+                <p>En <strong>Basquet TV</strong> ofrecemos un servicio de <strong>streaming personalizado</strong> para
+                    clubes, torneos, partidos y eventos particulares. Nos encargamos de toda la producción audiovisual,
+                    desde la grabación hasta la transmisión en vivo a través de plataformas como
+                    <strong>YouTube</strong>, <strong>Facebook</strong> o tu propio sitio web.
+                </p>
+                <p><strong>Richard Som</strong> es el servicio multimedia que le da vida a <strong>Basquet TV</strong>.
+                    Forma parte del ecosistema <strong>Multimedia</strong>, uniendo tecnología y experiencia para que tu
+                    evento se vea como nunca.</p>
+                <p>Ahora se suma a nosotros <strong>DevWeb</strong>, un negocio de <strong>diseño y desarrollo
+                        web</strong> enfocado en llevar negocios al mundo online y transformar visitantes en clientes.
+                    Juntos, potenciamos tu proyecto dentro y fuera de la cancha.</p>
+                <p>Llevá tu deporte a todo el público, en cualquier lugar.</p>
+                <p class="features">📡 <strong>Cobertura en vivo</strong> &nbsp; | &nbsp; <strong>Producción
+                        profesional</strong> &nbsp; | &nbsp; <strong>Difusión asegurada</strong></p>
+                <a href="https://wa.me/5493764730666?text=Hola,%20Quiero%20cotizar%20un%20Servicio%20de%20Transmisión"
+                    class="button-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Solicita más información</a>
+                <a href="https://www.devweb.uno/" class="button-web" target="_blank"><i
+                        class="fas fa-globe"></i>visitanos en www.debwev.uno</a>
+            </div>
+        </section>
+
+        <!-- News Section -->
         <section id="news" class="news-section">
-            <h2>Latest News</h2>
+            <h2>Noticias</h2>
             <article>
                 <h3>NBA Finals Highlights</h3>
                 <p>Catch up on the thrilling moments from the NBA Finals.</p>
@@ -120,71 +120,112 @@
             </article>
         </section>
 
+        <!-- Players Section -->
         <section id="players" class="players-section">
-            <h2>Top Players</h2>
+            <h2>Mejores Jugadores</h2>
             <ul>
                 <li><a href="#">LeBron James</a></li>
                 <li><a href="#">Kevin Durant</a></li>
                 <li><a href="#">Stephen Curry</a></li>
             </ul>
         </section>
+
+        <!-- Gallery Section -->
         <section id="highlights" class="highlights-section">
-            <h2>Game Highlights</h2>
-            <p>Watch the best plays from recent games.</p>
-            <ul>
-                <li><a href="#">Game 1 Highlights</a></li>
-                <li><a href="#">Game 2 Highlights</a></li>
-                <li><a href="#">Game 3 Highlights</a></li>
-            </ul>
+            <h2>Galería de Fotos</h2>
+            <p>Disfrutá de las mejores imágenes de partidos y eventos destacados.</p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="/img/noticias-deportivas-con-grabacion-de-camara.jpg" alt="Imagen 1">
+                    <div class="text">Caption Text</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="/img/freepik__the-style-is-candid-image-photography-with-natural__53124.jpeg"
+                        alt="Imagen 2">
+                    <div class="text">Caption Two</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="/img/freepik__the-style-is-candid-image-photography-with-natural__53127.jpeg"
+                        alt="Imagen 3">
+                    <div class="text">Caption Three</div>
+                </div>
+            </div>
+            <div class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </section>
+
+        <!-- Schedule Section -->
         <section id="schedule" class="schedule-section">
-            <h2>Proximos Eventos - Partidos</h2>
-            <p>Check out the schedule for upcoming matches.</p>
+            <h2>Próximos Eventos - Partidos</h2>
+            <p>Revisá el cronograma de los próximos encuentros:</p>
             <ul>
-                <li>Monday: Team A vs Team B</li>
-                <li>Tuesday: Team C vs Team D</li>
-                <li>Wednesday: Team E vs Team F</li>
+                <li>Lunes: Team A vs Team B <a href="https://www.youtube.com/watch?v=LINK1" target="_blank"
+                        class="youtube-link"><i class="fab fa-youtube"></i></a></li>
+                <li>Martes: Team C vs Team D <a href="https://www.youtube.com/watch?v=LINK2" target="_blank"
+                        class="youtube-link"><i class="fab fa-youtube"></i></a></li>
+                <li>Miércoles: Team E vs Team F <a href="https://www.youtube.com/watch?v=LINK3" target="_blank"
+                        class="youtube-link"><i class="fab fa-youtube"></i></a></li>
             </ul>
         </section>
+
+        <!-- Live Section -->
         <section id="live" class="live-section">
             <h2>Partidos en Vivo</h2>
-            <p>"¡Disfruta de partidos de baloncesto en directo aquí!"</p>
+            <p>¡Disfrutá de partidos de básquet en directo aquí!</p>
             <a href="#" class="live-button"><span class="live-dot"></span> En Vivo </a>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/d8TPWF5Os9c?si=e0czrfcvf14-JcIR"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="about-section">
-            <h2>About Us</h2>
-            <p>We are passionate about basketball and aim to provide the latest news and updates.</p>
+            <h2>🏀 Sobre Nosotros</h2>
+            <p>Somos <strong>Ricardo</strong> y <strong>Luciano</strong>, dos amigos unidos por una misma pasión: el
+                básquet.</p>
+            <p>Con <strong>Basquet TV</strong>, no solo transmitimos partidos, sino también <em>valores</em>,
+                <em>vínculos</em> y <em>emociones</em>.
+            </p>
+            <p>Creemos que el deporte es una herramienta poderosa de formación, un camino para construir comunidad y
+                fomentar el amor por el juego.</p>
+            <p>Llevamos cada evento con la seriedad de una producción profesional y la entrega de quienes aman lo que
+                hacen.</p>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <h2>Contacto</h2>
-            <p>Si tenés alguna pregunta, no dudes en contactarme</p>
-            <form id="contact" action="" class="contact-form">
+            <p>Si tenés alguna pregunta, no dudes en contactarnos.</p>
+            <form id="contact" action="#" method="POST" class="contact-form">
                 <label for="name">Nombre completo:</label>
                 <input type="text" id="name" name="name" required>
-
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
                 <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-
+                <textarea id="message" name="message" rows="5" required></textarea>
                 <button type="submit" class="boton-enviar">Enviar</button>
             </form>
         </section>
-
     </main>
+
     <footer>
         <p>&copy; 2025 - Basquet TV - Todos los derechos reservados</p>
-        <p>Desarrollado por <a href="https://devweb.uno/" target="_blank">Devweb</a></p>
+        <p>Desarrollado por <a href="https://devweb.uno/" target="_blank" title="DevWeb"><img
+                    src="/img/LOGO DEVWEBS.png" alt="DevWeb Logo"></a></p>
     </footer>
-
+    <script src="/js/burguer.js"></script>
+    <script src="js/carrousel.js"></script>
     <script src="/js/script.js"></script>
 </body>
+
+</html>
