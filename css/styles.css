@@ -155,12 +155,13 @@ nav a.live-button {
 }
 
 .live-dot {
-  width: 10px;
-  height: 10px;
+  width: 5px;
+  height: 5px;
   background-color: red;
   border-radius: 50%;
   animation: pulse 1.2s infinite;
 }
+
 @keyframes pulse {
   0%,100% { transform: scale(1); opacity: 1; }
   50% { transform: scale(1.5); opacity: 0.6; }
@@ -174,7 +175,22 @@ section {
   background: rgba(30,30,30,0.8);
   border-radius: 10px;
 }
-
+.home-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.home-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
 /* Logos in service-section */
 .logos-container {
   display: flex;
@@ -319,6 +335,7 @@ footer a img {
   .logo-img { width: 80px; }
   .service-container { flex-direction: column; text-align: center; }
 }
+
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -386,7 +403,20 @@ footer a img {
 }
 
 .live-section h2 {
-  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+.live-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
 }
 
 .live-section p {
@@ -403,7 +433,6 @@ footer a img {
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
-  margin-top: 10px;
   transition: background-color 0.3s;
 }
 
@@ -451,6 +480,108 @@ footer a img {
   height: 100%;
   border: none;
 }
+/* =========================
+   Schedule Section Mejorada
+========================= */
+.schedule-section {
+  background: rgba(30, 30, 30, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.schedule-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.schedule-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Cards para cada article */
+.schedule-section article {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 4px solid var(--primary-color);
+}
+
+.schedule-section article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.schedule-section article h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.schedule-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-section li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.schedule-section li:last-child {
+  border-bottom: none;
+}
+
+/* Botón YouTube */
+.youtube-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff0000;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1rem;
+  transition: background 0.2s ease, transform 0.2s ease;
+
+}
+
+.youtube-link:hover {
+  background: #cc0000;
+  transform: scale(1.15);
+}
+
+/* Responsive: grid para tablets y PC */
+@media (min-width: 768px) {
+  .schedule-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .schedule-section h2 {
+    grid-column: 1 / -1;
+  }
+}
+
 /* ✅ Media query for smaller screens */
 @media (max-width: 768px) {
   .live-section {
