@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem;
   color: var(--text-color);
 }
+p {
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
 
 /* Buttons */
 .button, .button-whatsapp, .button-youtube, .button-web{
@@ -135,6 +139,23 @@ nav ul {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+}
+nav select.liga-select {
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  background: var(--header-bg);
+  color: var(--text-color);
+  cursor: pointer;
+}
+nav select.liga-select option{
+  background: var(--header-bg);
+  color: var(--text-color);
+}
+
+nav select.liga-select option:hover{
+  background: var(--link-hover-bg);
+  color: #121212;
 }
 
 nav a {
@@ -405,7 +426,7 @@ footer a img {
 .live-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin-bottom: 2rem;
   position: relative;
 }
@@ -480,6 +501,7 @@ footer a img {
   height: 100%;
   border: none;
 }
+
 /* =========================
    Schedule Section Mejorada
 ========================= */
@@ -493,7 +515,7 @@ footer a img {
 .schedule-section h2 {
   text-align: center;
   font-size: 2rem;
-  color: var(--primary-color);
+  color: var(--text-color);
   margin-bottom: 2rem;
   position: relative;
 }
@@ -567,6 +589,71 @@ footer a img {
 .youtube-link:hover {
   background: #cc0000;
   transform: scale(1.15);
+}
+.service-section .service-content h2{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.service-section .service-content h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+.news-section h2{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  position: relative; 
+}
+.news-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+.about-section h2{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.about-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+.contact-section h2{
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.contact-section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--primary-color);
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
 }
 
 /* Responsive: grid para tablets y PC */
