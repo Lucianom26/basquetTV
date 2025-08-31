@@ -111,6 +111,13 @@ header {
 .search-container button:hover {
   background-color: #e65c00;
 }
+.highlight {
+    background-color: none;
+}
+
+.active-match {
+    background-color: orange;
+}
 
 .social-icons {
   display: flex;
@@ -130,6 +137,8 @@ nav {
   background: var(--header-bg);
   border-bottom: 3px solid var(--primary-color);
   padding: 10px 0;
+  position: sticky;
+  top: 0;
 }
 
 nav ul {
@@ -200,7 +209,6 @@ section {
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 1.5rem;
-  position: relative;
 }
 .home-section h2::after {
   content: '';
@@ -460,7 +468,6 @@ footer a img {
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 2rem;
-  position: relative;
 }
 .live-section h2::after {
   content: '';
@@ -549,7 +556,6 @@ footer a img {
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 2rem;
-  position: relative;
 }
 
 .schedule-section h2::after {
@@ -627,7 +633,6 @@ footer a img {
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 1.5rem;
-  position: relative;
 }
 .service-section .service-content h2::after {
   content: '';
@@ -642,8 +647,7 @@ footer a img {
   text-align: center;
   font-size: 2rem;
   color: var(--text-color);
-  margin-bottom: 1.5rem;
-  position: relative; 
+  margin-bottom: 1.5rem; 
 }
 .news-section h2::after {
   content: '';
@@ -673,7 +677,6 @@ footer a img {
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 1.5rem;
-  position: relative;
 }
 .about-section h2::after {
   content: '';
@@ -689,7 +692,6 @@ footer a img {
   font-size: 2rem;
   color: var(--text-color);
   margin-bottom: 1.5rem;
-  position: relative;
 }
 
 .contact-section h2::after {
@@ -700,6 +702,34 @@ footer a img {
   background: var(--primary-color);
   margin: 0.5rem auto 0;
   border-radius: 2px;
+}
+
+/* Botón de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-image: url('/img/pelota-basquet.ico');
+    background-size: cover;
+    background-position: center;
+    background-color: #d38d25;
+    color: rgb(32, 223, 42);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+    z-index: 999;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    color: white;
 }
 
 /* Responsive: grid para tablets y PC */

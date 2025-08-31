@@ -21,8 +21,8 @@
             <img src="img/447444255_1471940896743931_3369075468787516659_n.jpg" alt="Basquet TV Logo" class="logo">
         </div>
         <div class="search-container">
-            <input type="text" placeholder="Buscar..." aria-label="Buscar contenido">
-            <button type="submit"><i class="fas fa-search"></i></button>
+            <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar contenido">
+            <button type="button" id="searchButton"><i class="fas fa-search"></i></button>
         </div>
         <div class="social-icons">
             <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -187,21 +187,24 @@
         <section id="news" class="news-section">
             <h2 id="fmbb">
                 <img src="/img/20482207_156053351620140_7356829909152432128_a.jpg" class="logo-img"
-                    alt="Logo Federación Misionera de Básquetbol" width="80">  
-                Torneo Pre Federal 2025 – Federación Misionera de Básquetbol</h2>
+                    alt="Logo Federación Misionera de Básquetbol" width="80">
+                Torneo Pre Federal 2025 – Federación Misionera de Básquetbol
+            </h2>
 
             <article>
                 <h3>Inicio prometedor en la fecha inaugural</h3>
                 <p>El <strong>Torneo Pre Federal 2025</strong> de la Federación Misionera de Básquetbol comenzó con una
                     jornada cargada de emociones y grandes actuaciones individuales en la primera fecha disputada el
-                    <strong>29 de agosto de 2025</strong>.</p>
+                    <strong>29 de agosto de 2025</strong>.
+                </p>
 
                 <ul>
                     <li>
                         <strong>CAPRI 71 – 85 El Coatí</strong>
                         <a href="https://youtube.com/live/mt2HWMcV9EE?feature=share" target="_blank"
                             class="youtube-link"><i class="fab fa-youtube"></i></a> Miralo de nuevo<br>
-                        En el conjunto ganador el goleador fue,<strong>Valentín Labuckas</strong> con 35 puntos (6 triples). <br>
+                        En el conjunto ganador el goleador fue,<strong>Valentín Labuckas</strong> con 35 puntos (6
+                        triples). <br>
                         Destacados en el Azzurro: <strong>Gaston Cichanowski</strong> (16 puntos) y
                         <strong>Alejo Gonzalez</strong> (13 puntos).<br>
                         📅 Próxima fecha (05/09/25): CAPRI visitará a Mitre.
@@ -240,6 +243,50 @@
             </article>-->
 
         </section>
+        <!-- News Section APBB -->
+        <section id="news-apbb" class="news-section">
+            <h2 id="apbb">
+                <img src="/img/298476743_623602379038941_820462598270786365_n.jpg" class="logo-img"
+                    alt="Logo Asociación Posadeña de Básquetbol" width="80">
+                Torneo Apertura 2025 – Asociación Posadeña de Básquetbol
+            </h2>
+
+            <article>
+                <h3>Emoción en la jornada del martes 26 de agosto</h3>
+                <p>El <strong>Torneo Apertura 2025</strong> de la <strong>Asociación Posadeña de Básquetbol</strong>
+                    vivió una fecha vibrante el
+                    <strong>martes 26 de agosto de 2025</strong>, con dos partidos que mantuvieron en vilo a los
+                    fanáticos hasta el final.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Tokio 79 – 67 Brown</strong><br>
+                        El conjunto oriental impuso su ritmo desde el inicio, mostrando solidez defensiva y efectividad
+                        en ataque para quedarse con una victoria clara sobre Jorge Gibson Brown.
+                        📅 Próxima fecha: Tokio se enfrentará a CAPRI como visitante.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Villa Urquiza 65 – 60 CAPRI</strong><br>
+                        En un partido muy parejo y definido en los últimos minutos, Villa Urquiza logró un triunfo clave
+                        frente al Azzurro, mostrando carácter en los momentos decisivos.
+                        📅 Próxima fecha: Villa Urquiza visitará a Brown.
+                    </li>
+                </ul>
+            </article>
+
+            <!--<article>
+        <h3>Tabla de posiciones – Torneo Apertura</h3>
+        <p>Posiciones actualizadas tras la última fecha:</p>
+        <ul>
+            <li><strong>1° Tokio:</strong> 6 pts (3 ganados, 0 perdidos)</li>
+            <li><strong>2° Villa Urquiza:</strong> 5 pts (2-1)</li>
+            <li><strong>3° Brown:</strong> 4 pts (1-2)</li>
+            <li><strong>4° CAPRI:</strong> 3 pts (0-3)</li>
+        </ul>
+    </article>-->
+        </section>
 
         <!-- News Section -->
         <section id="news" class="news-section">
@@ -266,7 +313,8 @@
 
                 <p><img src="https://assets.fiba.basketball/image/upload/f_svg/v1740521264/.asset_mainlogo--competition_208811"
                         alt="Logo oficial FIBA AmeriCup 2025" width="300"></p>
-                <p><a href="https://www.fiba.basketball/en/events/fiba-americup-2025" target="_blank" style="text-decoration: none; color: rgb(223, 166, 82);">Más información en
+                <p><a href="https://www.fiba.basketball/en/events/fiba-americup-2025" target="_blank"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Más información en
                         FIBA.basketball</a></p>
 
                 <p>Con estos resultados, <strong>Argentina y Brasil</strong> jugarán la gran final por el título
@@ -308,7 +356,7 @@
 
                 <p><img src="https://assets.fiba.basketball/image/upload/f_svg/v1740521264/.asset_mainlogo--competition_208811"
                         alt="Logo oficial FIBA AmeriCup 2025" width="300"></p>
-                
+
 
                 <p>En semifinales, Argentina enfrentará hoy, sábado 30 de agosto a las 21:10 (hora argentina), a
                     <strong>Canadá</strong> en el Polideportivo Alexis Argüello de Managua. El partido se podrá ver en
@@ -325,9 +373,11 @@
                     alt="Comunicado de sanciones FIBA AmeriCup 2025">
                 <p>En su siguiente partido, Argentina logró una victoria casi milagrosa ante Colombia: con un doble en
                     la última posesión de Nicolás Brussino, la Albiceleste ganó 84-83 y clasificó a los cuartos de final
-                    de la AmeriCup 2025 (<a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">El Destape</a>, <a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">Olé</a>).</p>
+                    de la AmeriCup 2025 (<a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">El
+                        Destape</a>, <a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">Olé</a>).</p>
                 <p>Este triunfo coloca a Argentina segunda en el Grupo C y a la espera de conocer su próximo rival
-                    (posiblemente Canadá o Puerto Rico) (<a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">El Destape</a>).</p>
+                    (posiblemente Canadá o Puerto Rico) (<a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">El Destape</a>).</p>
                 <img src="https://www.ole.com.ar/2025/08/25/gCkFMwXb-_400x400__1.jpg"
                     alt="Nicolás Brussino anota el doble decisivo contra Colombia">
             </article>
@@ -336,9 +386,11 @@
                 <img src="https://www.ellitoral.com/images/2025/08/24/aISrUaDFX_1300x655__1.jpg"
                     alt="Tensión tras Argentina vs República Dominicana  AmeriCup 2025">
                 <p>El 24 de agosto de 2025, Argentina perdió contra República Dominicana por 84-83 en tiempo
-                    suplementario, en un partido cargado de tensión y emociones (<a href="#"style="text-decoration: none; color: rgb(223, 166, 82);">Diario AS</a>, <a
-                        href="#" style="text-decoration: none; color: rgb(223, 166, 82);">Ámbito</a>).</p>
-                <p>Tras el encuentro, se desató una pelea entre jugadores de ambos equipos (<a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">Diario AS</a>,
+                    suplementario, en un partido cargado de tensión y emociones (<a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Diario AS</a>, <a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Ámbito</a>).</p>
+                <p>Tras el encuentro, se desató una pelea entre jugadores de ambos equipos (<a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Diario AS</a>,
                     <a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">Ámbito</a>).
                 </p>
             </article>
@@ -348,8 +400,11 @@
                 <img src="https://s.yimg.com/ny/api/res/1.2/r2jI5xmmK5Q8A87sVShomQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjg7Y2Y9d2VicA--/https%3A//media.zenfs.com/es/lanacion.com.ar/e72022ac5d07ecc146b96ebcff7a7d20"
                     alt="Comunicado de sanciones FIBA AmeriCup 2025">
                 <p>El Panel Disciplinario de FIBA, tras analizar los incidentes ocurridos tras el partido del 24 de
-                    agosto en Managua, impuso las siguientes sanciones (<a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">fiba.basketball</a>, <a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">San
-                        Antonio Express-News</a>, <a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">Todo Noticias</a>):</p>
+                    agosto en Managua, impuso las siguientes sanciones (<a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">fiba.basketball</a>, <a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">San
+                        Antonio Express-News</a>, <a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Todo Noticias</a>):</p>
                 <ul>
                     <li><strong>Selección Argentina:</strong> Gonzalo Bressan: suspendido por dos partidos oficiales
                         FIBA. Francisco Caffaro y Juan Vaulet: suspendidos por un partido cada uno. Pablo Prigioni
@@ -482,6 +537,11 @@
         <p>Desarrollado por <a href="https://devweb.uno/" target="_blank" title="DevWeb"><img
                     src="/img/LOGO DEVWEBS.png" alt="DevWeb Logo"></a></p>
     </footer>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5493764730666?text=Hola,%20Quiero%20cotizar%20un%20Servicio%20de%20Transmisión"
+        class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
     <script src="/js/burguer.js"></script>
     <script src="js/carrousel.js"></script>
     <script src="/js/script.js"></script>
