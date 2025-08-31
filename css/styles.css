@@ -615,7 +615,7 @@ footer a img {
   height: 28px;
   font-size: 1rem;
   transition: background 0.2s ease, transform 0.2s ease;
-
+  text-decoration: none;
 }
 
 .youtube-link:hover {
