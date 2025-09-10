@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basquet TV - Noticias</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/img/pelota-basquet.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="/img/LOGOS/Logo_BASQUETTV.jpg" alt="Basquet TV Logo" class="logo" loading="lazy">
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar..." aria-label="Buscar contenido">
+            <button type="button" id="searchButton"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@Basquet-TV" aria-label="YouTube" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/basquet.tv/" aria-label="Instagram" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5493764730666?text=Hola,%20Quiero%20cotizar%20un%20Servicio%20de%20Transmisión"
+                aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:consultas@basquettv.uno" aria-label="Email" target="_blank"><i
+                    class="fas fa-envelope"></i></a>
+        </div>
+    </header>
+
+    <nav>
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+        <ul id="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="partidos.html" id="auto-toggle-btn" class="live-button"><span class="live-dot"></span> En Vivo
+                </a>
+            </li>
+            <select class="liga-select" id="liga-select">
+                <option value="" disabled selected>Selecciona una Liga</option>
+                <option value="fmbb">FMBB</option>
+                <option value="femenino">Femenino</option>
+                <option value="apbb">APBB</option>
+                <option value="liga-nacional">Liga Nacional</option>
+                <option value="seleccion">Selección Argentina</option>
+            </select>
+            <li><a href="partidos.html">Partidos</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="index.html">Servicio de streaming</a></li>
+            <li><a href="nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="#contact">Contacto</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <!--Noticias-Slide-->
+        <section id="highlights" class="highlights-section">
+            <h2>Noticias</h2>
+            <p>Disfrutá de las mejores imágenes de partidos y eventos destacados.</p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">Liga Nacional</div>
+                    <img src="/img/Liga_Nacional/obera1_d1.jpg" alt="Imagen 1" loading="lazy">
+                    <div class="text"><a href="#liga-nacional">Puesta a punto del Celeste para la Liga</a></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">Pre Federal - FMBB</div>
+                    <img src="/img/FMBB/PreFederal/3ra_fecha_prefederal.jpg"
+                        alt="Imagen 2" loading="lazy">
+                    <div class="text"><a href="#fmbb">Tirica, Capri y El Coatí serán locales en la 3ra. fecha </a></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">Femenino - FMBB</div>
+                    <img src="/img/FMBB/Femenino/tokio_final_femenina.png"
+                        alt="Imagen 3" loading="lazy">
+                    <div class="text"><a href="#femenino">Tokio se quedó con el primero 🏀</a></div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">Torneo Local - APBB</div>
+                    <img src="/img/APBB/luzyfuerza_brown.jpg"
+                        alt="Imagen 3" loading="lazy">
+                    <div class="text"><a href="#apbb">Luz y Fuerza recibe a Brown en un duelo clave por el Torneo Apertura</a></div>
+                </div>
+            </div>
+            <div class="dots-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
+        <!-- Sponsors Section -->
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="/img/LOGOS/Logo_FMBB.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/LOGOS/Logo_APBB.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/freepik__the-style-is-candid-image-photography-with-natural__53125.jpeg" alt=""
+                        loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/freepik__the-style-is-candid-image-photography-with-natural__53126.jpeg" alt=""
+                        loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/LOGOS/Logo_APBB.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/LOGOS/Logo_FMBB.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/freepik__the-style-is-candid-image-photography-with-natural__53123.jpeg" alt=""
+                        loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/freepik__the-style-is-candid-image-photography-with-natural__53124.jpeg" alt=""
+                        loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/freepik__the-style-is-candid-image-photography-with-natural__53125.jpeg" alt=""
+                        loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/LOGOS/Logo_BASQUETTV.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/LOGOS/Logo-dev-web.jpg" alt="" loading="lazy">
+                </div>
+                <div class="slide">
+                    <img src="/img/LOGOS/Logo_RS.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- News Section FMBB -->
+        <section id="fmbb" class="news-section">
+            <h2>
+                <img src="/img/LOGOS/Logo_FMBB.jpg" class="logo-img" alt="Logo Federación Misionera de Básquetbol"
+                    width="80" loading="lazy">
+                Torneo Pre Federal 2025 – Federación Misionera de Básquetbol
+            </h2>
+            <article>
+                <h3>Pre Federal | Tirica, Capri y El Coatí serán locales en la 3ª fecha</h3>
+                <p>La <strong>tercera fecha del Pre Federal</strong> de básquet en Misiones se pone en marcha este
+                    miércoles
+                    <strong>10 de septiembre</strong>, con el duelo entre <strong>Tirica</strong> y <strong>OTC</strong>
+                    en
+                    la <em>Unión Cultural Eldorado</em> desde las 21:30 hs.
+                </p>
+
+                <p>La acción continuará el viernes <strong>12 de septiembre</strong>, con dos partidos en simultáneo:
+                    <strong>Mitre</strong> visitará a <strong>El Coatí</strong> en Eldorado y <strong>Capri</strong>
+                    recibirá a
+                    <strong>Tokio</strong> en Posadas. Ambos encuentros están programados para las 21:30 hs.
+                </p>
+
+                <h4>Tabla de posiciones</h4>
+                <ol>
+                    <li>🏀 <strong>Mitre</strong> – 4 pts</li>
+                    <li>🏀 <strong>OTC</strong> – 4 pts</li>
+                    <li>🏀 <strong>El Coatí</strong> – 3 pts</li>
+                    <li>🏀 <strong>Tokio</strong> – 3 pts</li>
+                    <li>🏀 <strong>Tirica</strong> – 2 pts</li>
+                    <li>🏀 <strong>Capri</strong> – 2 pts</li>
+                </ol>
+
+                <p style="font-size: 0.9em; color: gray;"><em>Fuente: Instagram oficial de la Federación Misionera de
+                        Básquetbol (FMBB).</em></p>
+            </article>
+
+            <article>
+                <h3>Resumen: segunda fecha del Pre Federal en Misiones</h3>
+                <p>El viernes 5 de septiembre dejó una jornada repleta de emociones en la segunda fecha del <strong>Pre
+                        Federal</strong> misionero. Estos fueron los resultados más destacados:</p>
+
+
+                <h4>Mitre vs CAPRI</h4>
+                <p><strong>Mitre</strong> se impuso como local a <strong>CAPRI</strong> por <strong>92-65</strong>,
+                    en un partido en el que el equipo auriazul impuso su juego con solvencia.</p>
+                <p>
+                    <img src="/img/FMBB/PreFederal/pierotti-mitre.png" alt="Mitre vs CAPRI - Imagen 1" width="350">
+                    <img src="/img/FMBB/PreFederal/hillebrand-CAPRI.png" alt="Mitre vs CAPRI - Imagen 2" width="320">
+                </p>
+
+
+
+                <h4>OTC vs El Coatí</h4>
+                <p><strong>OTC</strong> logró un importante triunfo ante <strong>El Coatí</strong> como visitante,
+                    por <strong>84-78</strong>, en un duelo que se definió en el último cuarto.</p>
+                <p>
+                    <img src="/img/FMBB/PreFederal/OTC-Jugador.jpg" alt="OTC vs El Coatí - Imagen 1" width="350">
+                    <img src="/img/FMBB/PreFederal/COATI-jugador.jpg" alt="OTC vs El Coatí - Imagen 2" width="350">
+                </p>
+
+
+
+                <h4>Tokio vs Tirica</h4>
+                <p><strong>Tokio</strong> logró su primer festejo en el torneo tras vencer ajustadamente a
+                    <strong>Tirica</strong> por <strong>89-87</strong>, en un duelo que se resolvió en los segundos
+                    finales.
+                </p>
+                <p>
+                    <img src="/img/FMBB/PreFederal/Tokio-SANTACRUZ.jpeg" alt="Tokio vs Tirica - Imagen 1" width="350">
+                    <img src="/img/FMBB/PreFederal/Tirica-Hoffauer.jpeg" alt="Tokio vs Tirica - Imagen 2" width="370">
+                </p>
+
+
+                <h4>Tabla de resultados – Fecha 2</h4>
+                <table border="1" cellpadding="6" cellspacing="0"
+                    style="border-collapse: collapse; text-align: center; max-width: 500px;">
+                    <thead style="background-color: #0f0f0f;">
+                        <tr>
+                            <th>Local</th>
+                            <th>Visitante</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mitre</td>
+                            <td>CAPRI</td>
+                            <td>92-65</td>
+                        </tr>
+                        <tr>
+                            <td>OTC</td>
+                            <td>El Coatí</td>
+                            <td>84-78</td>
+                        </tr>
+                        <tr>
+                            <td>Tokio</td>
+                            <td>Tirica</td>
+                            <td>89-87</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <p>Seguí con nosotros para estar al tanto de más resultados, estadísticas y la cobertura más completa
+                    del Pre Federal en Basket TV.</p>
+            </article>
+
+
+            <article>
+                <h3>Noche de Pre Federal: recibimos a Capri por la segunda fecha</h3>
+                <p>Esta noche, nuestra cancha será el escenario de un nuevo capítulo del <strong>Pre Federal</strong>.
+                    Desde las
+                    <strong>21:30 horas</strong>, recibimos a <strong>CAPRI</strong> en el marco de la segunda fecha del
+                    certamen.
+                </p>
+
+                <p>El equipo buscará sumar una victoria importante frente a su gente, aprovechando la localía y el apoyo
+                    de la
+                    hinchada, que seguramente dirá presente para alentar durante todo el encuentro.</p>
+
+                <p>La expectativa es alta y se espera un partido intenso, con ambos conjuntos dejando todo para quedarse
+                    con el
+                    triunfo. Será una gran oportunidad para ver básquet de alto nivel y disfrutar de una noche a puro
+                    deporte.</p>
+
+                <p><strong>📍 Lugar:</strong> Nuestra cancha<br>
+                    <strong>🕤 Hora:</strong> 21:30 hs<br>
+                    <strong>🏆 Torneo:</strong> Pre Federal – Fecha 2<br>
+                    <strong>⚔️ Rival:</strong> CAPRI
+                </p>
+
+                <p><img src="/img/FMBB/PreFederal/mitre-masculino-fmbb.png"
+                        alt="Previa del partido ante CAPRI - Pre Federal" width="500"></p>
+                <p><img src="/img/FMBB/PreFederal/Capri-prefederal.png"
+                        alt="Previa del partido ante CAPRI - Pre Federal" width="500">
+                </p>
+                <p><em>¡Te esperamos para alentar y vivir juntos otra gran noche de básquet!</em></p>
+            </article>
+            <article>
+                <h3>Inicio prometedor en la fecha inaugural</h3>
+                <p>El <strong>Torneo Pre Federal 2025</strong> de la Federación Misionera de Básquetbol comenzó con una
+                    jornada cargada de emociones y grandes actuaciones individuales en la primera fecha disputada el
+                    <strong>29 de agosto de 2025</strong>.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>CAPRI 71 – 85 El Coatí</strong>
+                        <a href="https://youtube.com/live/mt2HWMcV9EE?feature=share" target="_blank"
+                            class="youtube-link"><i class="fab fa-youtube"></i></a> Miralo de nuevo<br>
+                        En el conjunto ganador el goleador fue,<strong>Valentín Labuckas</strong> con 35 puntos (6
+                        triples). <br>
+                        Destacados en el Azzurro: <strong>Gaston Cichanowski</strong> (16 puntos) y
+                        <strong>Alejo Gonzalez</strong> (13 puntos).<br>
+                        📅 Próxima fecha (05/09/25): CAPRI visitará a Mitre.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Tokio 83 – 72 OTC</strong><br>
+                        En OTC, <strong>Koziarzki</strong> fue el máximo anotador con 23 puntos (incluyendo 7 triples),
+                        acompañado por <strong>Reizner</strong> (18) y <strong>Costa</strong> (15).<br>
+                        En Tokio, se destacó <strong>Valentín Pleszak</strong> con 18 puntos. <br>
+                        📅 Próxima fecha (05/09/25): OTC de local ante El Coatí.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Tirica 59 – 81 Mitre</strong><br>
+                        <strong>Pérez Douthat</strong> lideró al ganador con 21 puntos, mientras que
+                        <strong>Hofbauer</strong> sumó 15 para el local.<br>
+                        📅 Próxima fecha (05/09/25): Tirica visitará a Tokio.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!--Femenino - FMBB -->
+        <section id="femenino" class="news-section">
+            <h2>
+                <img src="/img/LOGOS/Logo_FMBB.jpg" class="logo-img" alt="Logo Federación Misionera de Básquetbol"
+                    width="80">
+                Liga Provincial Mayores Femenino 2025 – Federación Misionera de Básquetbol
+            </h2>
+            <article>
+                <h3>Provincial Femenino | Tokio se quedó con el primero 🏀</h3>
+                <p><strong>Tokio</strong> se hizo fuerte en su casa y venció a <strong>Tirica</strong> por
+                    <strong>64-45</strong>
+                    en el primer juego de la final del <strong>Provincial Femenino</strong>. Fue un partido intenso,
+                    con
+                    gran nivel de juego
+                    y momentos de mucha paridad en el primer tiempo.
+                </p>
+
+                <p>En el conjunto local, la máxima anotadora fue <strong>Camila Venialgo</strong> con 11 puntos,
+                    destacándose por su
+                    efectividad y aporte defensivo. Por el lado de la visita, <strong>Paola Reyes</strong> brilló
+                    con 16
+                    puntos,
+                    convirtiéndose en la figura del encuentro pese a la derrota.</p>
+
+                <p>El próximo duelo se disputará en la <em>Unión Cultural Eldorado</em>, con fecha y hora a
+                    confirmar.
+                    En caso de ser necesario un tercer partido, la definición será nuevamente en cancha de Tokio.
+                </p>
+
+                <p style="font-size: 0.9em; color: gray;"><em>Fuente: Instagram oficial de la Federación Misionera
+                        de
+                        Básquetbol (FMBB).</em></p>
+                <p><em>Seguí toda la cobertura del Provincial Femenino y las transmisiones en vivo por
+                        Basket TV.</em></p>
+            </article>
+
+            <article>
+                <h3>Tirica es finalista de la Liga Provincial Femenina</h3>
+                <p>En una noche de pura emoción en el <strong>Unión Cultural de Eldorado</strong>,
+                    <strong>Tirica</strong> logró
+                    clasificar a la final de la <strong>Liga Provincial Mayores Femenina</strong> al vencer a
+                    <strong>Mitre</strong>
+                    en el tercer juego de la serie semifinal, que estaba igualada <strong>1-1</strong>.
+                </p>
+
+                <p>El encuentro fue intenso desde el salto inicial, con ambos equipos dejando todo en la cancha para
+                    quedarse con el
+                    último pasaje a la gran definición. Tirica, respaldado por su gente, mostró carácter en los
+                    momentos
+                    clave,
+                    ajustó la defensa y encontró eficacia en ofensiva para marcar la diferencia en el marcador.</p>
+
+                <p>Las <strong>felinas</strong> se apoyaron en una sólida labor colectiva, destacándose el trabajo
+                    de
+                    sus
+                    jugadoras más experimentadas y el aporte de las más jóvenes, que supieron responder a la
+                    exigencia
+                    del partido
+                    decisivo.</p>
+
+                <p>Con este triunfo, Tirica se instala en la gran final provincial y ahora se prepara para afrontar
+                    el
+                    desafío de
+                    ir por el título. El equipo y la afición ya sueñan con levantar el trofeo, mientras el mensaje
+                    es
+                    claro:
+                    <strong>¡Vamos chicas, a seguir con todo!</strong>
+                </p>
+
+                <p><img src="img/FMBB/Femenino/tirica-finlista-femenino.png"
+                        alt="Tirica clasifica a la final de la Liga Provincial Femenina" width="500">
+                </p>
+
+                <p><em>Fotos: Liga Provincial / Tirica Basket</em></p>
+            </article>
+            <article>
+                <h3>Tirica y Mitre definen el pase a la final en un Juego 3 decisivo</h3>
+                <p>La <strong>Liga Provincial Mayores Femenina</strong> vive una noche clave este <strong>miércoles
+                        3 de
+                        septiembre</strong>, cuando <strong>Tirica</strong> y <strong>Mitre</strong> se enfrenten en
+                    el
+                    tercer y último juego de las semifinales. El partido se disputará en el <strong>Unión Cultural
+                        de
+                        Eldorado</strong> desde las <strong>21:30 horas</strong>.</p>
+
+                <p>La serie se encuentra igualada <strong>1-1</strong>, tras dos encuentros muy parejos que dejaron
+                    en
+                    claro la paridad entre ambos equipos. El ganador de este compromiso se asegurará un lugar en la
+                    gran
+                    final del certamen, donde ya espera el vencedor de la otra llave semifinal.</p>
+
+                <p>El conjunto local, <strong>Tirica</strong>, buscará apoyarse en el aliento de su gente para dar
+                    el
+                    último paso y volver a una final provincial. Por su parte, <strong>Mitre</strong> intentará dar
+                    el
+                    golpe fuera de casa, apostando a la solidez defensiva y a la experiencia de sus jugadoras más
+                    destacadas.</p>
+
+                <p>La expectativa en Eldorado es alta y se espera una gran convocatoria para este duelo definitorio
+                    que
+                    promete intensidad, nervios y emoción hasta el final.</p>
+
+                <p><img src="/img/FMBB/PreFederal/img_tirica_mitre_fmbb.png"
+                        alt="Tirica vs Mitre - Semifinal Femenino Liga Provincial Mayores" width="500" loading="lazy">
+                </p>
+
+                <section>
+                    <h4>Datos del partido</h4>
+                    <table border="1" cellpadding="6" cellspacing="0"
+                        style="border-collapse: collapse; text-align: left; max-width: 500px; width: 100%;">
+                        <tbody>
+                            <tr>
+                                <th>Competencia</th>
+                                <td>Liga Provincial Mayores – Femenino</td>
+                            </tr>
+                            <tr>
+                                <th>Instancia</th>
+                                <td>Semifinal – Juego 3</td>
+                            </tr>
+                            <tr>
+                                <th>Equipos</th>
+                                <td>Tirica vs Mitre</td>
+                            </tr>
+                            <tr>
+                                <th>Serie</th>
+                                <td>Igualada 1-1</td>
+                            </tr>
+                            <tr>
+                                <th>Fecha</th>
+                                <td>Miércoles 3 de septiembre</td>
+                            </tr>
+                            <tr>
+                                <th>Hora</th>
+                                <td>21:30</td>
+                            </tr>
+                            <tr>
+                                <th>Lugar</th>
+                                <td>Unión Cultural – Eldorado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <p><em>Fuente: Tirica Basket / Redes sociales</em></p>
+            </article>
+
+        </section>
+
+        <!-- News Section APBB -->
+        <section id="apbb" class="news-section">
+            <h2>
+                <img src="/img/LOGOS/Logo_APBB.jpg" class="logo-img" alt="Logo Asociación Posadeña de Básquetbol"
+                    width="80">
+                Torneo Apertura 2025 – Asociación Posadeña de Básquetbol
+            </h2>
+            <article>
+
+                <h3>🏀 Luz y Fuerza recibe a Brown en un duelo clave por el Torneo Apertura</h1>
+                    <p><strong>Posadas, Misiones – 10 de septiembre de 2025</strong></p>
+
+                    <p>Este miércoles desde las <strong>21:30</strong>, el estadio de Luz y Fuerza será escenario de un
+                        nuevo capítulo del Torneo Apertura de la Asociación Posadeña de Básquetbol (APBB). El local se
+                        enfrentará a <strong>Jorge Gibson Brown</strong> en un partido que promete intensidad, emoción y
+                        puntos clave en la tabla.</p>
+
+                    <h3>⚡ Luz y Fuerza busca afirmarse</h3>
+                    <p>Con una campaña irregular hasta el momento, Luz y Fuerza llega con la necesidad de sumar para
+                        mantenerse en la pelea. El equipo mostró destellos de buen juego en sus últimas presentaciones,
+                        y confía en hacerse fuerte como local para frenar a un Brown que viene en alza.</p>
+
+                    <h3>🟢 Brown quiere seguir escalando</h3>
+                    <p>El Verdirrojo, por su parte, viene de una victoria importante y buscará aprovechar el envión
+                        anímico para sumar fuera de casa. Con jugadores como <strong>Rodrigo Méndez</strong> y
+                        <strong>Lucas Sosa</strong> en gran nivel, Brown apunta a consolidarse en la zona media de la
+                        tabla y meterse en la conversación por los puestos de arriba.</p>
+
+                    <h3>🎟️ Entrada libre y clima de clásico</h3>
+                    <p>Se espera una gran concurrencia en el estadio de Luz y Fuerza, con entrada libre y gratuita. El
+                        ambiente promete ser vibrante, con las hinchadas listas para alentar y vivir una noche de
+                        básquet de alto voltaje.</p>
+                    <p>La cita es a las <strong>21:30</strong>. ¡No te lo pierdas!</p>
+            </article>
+            <article>
+
+                <h3>🔥 Mitre se impone en un clásico inolvidable ante Tokio</h3>
+                <p><strong>Posadas, Misiones – 9 de septiembre de 2025</strong></p>
+
+
+                <p>En una noche cargada de tensión y emoción, Bartolomé Mitre venció a Tokio por <strong>89 a
+                        87</strong> en tiempo suplementario, en el marco de la cuarta fecha del Torneo Apertura de
+                    la Asociación Posadeña de Básquetbol (APBB). El encuentro se disputó en el estadio <em>Jorge R.
+                        Yamaguchi</em> y fue definido en los últimos segundos, con una actuación estelar de
+                    <strong>Santino Clara</strong>, goleador del partido con <strong>26 puntos</strong>.
+                </p>
+                <p><img src="/img/APBB/tokio_mitre_apbb.png" alt="Mitre vs Los Pileteros - APBB Mayores" width="500">
+                </p>
+                <h3>⏱️ Un duelo parejo de principio a fin</h3>
+                <p>Tokio comenzó mejor, dominando el primer cuarto con ataques efectivos y cerrando el parcial
+                    <strong>20-17</strong>. Mitre respondió en el segundo segmento, pero el local se fue al descanso
+                    con ventaja de <strong>37-35</strong>.
+                </p>
+                <p>En el tercer cuarto, Tokio estiró la diferencia hasta los <strong>68-58</strong>, pero Mitre
+                    reaccionó sobre el final con un cambio de actitud y precisión ofensiva. En el último minuto del
+                    tiempo reglamentario, Clara anotó <strong>7 puntos consecutivos</strong> para igualar el
+                    marcador en <strong>79-79</strong> y forzar el suplementario.</p>
+                <p><img src="/img/APBB/mitre_tokio_apbb.png" alt="Mitre vs Los Pileteros - APBB Mayores" width="500">
+                </p>
+                <h3>🏁 Suplementario de infarto</h3>
+                <p>El tiempo extra fue palo a palo. Tokio pasó al frente con una conversión de Aranda (87-86), pero
+                    Clara volvió a aparecer con una penetración decisiva para poner el <strong>89-87</strong>
+                    definitivo. Moscoso tuvo la última chance desde la línea, pero no logró igualar el marcador.</p>
+                <p>Con esta victoria, Mitre se mantiene como <strong>único líder del torneo</strong> con <strong>4
+                        triunfos en 4 partidos</strong>, mientras que Tokio sufrió su primera derrota y quedó con
+                    <strong>2 victorias y 1 caída</strong>.
+                </p>
+
+
+                <section>
+                    <h3>📊 Tabla de posiciones actualizada</h3>
+                    <ul>
+                        <li><strong>1. Mitre</strong> – 4 PJ / 4 PG / 0 PP / 8 pts</li>
+                        <li><strong>2. Villa Urquiza</strong> – 3 PJ / 2 PG / 1 PP / 5 pts</li>
+                        <li><strong>3. Tokio</strong> – 3 PJ / 2 PG / 1 PP / 5 pts</li>
+                        <li><strong>4. Brown</strong> – 3 PJ / 1 PG / 2 PP / 4 pts</li>
+                        <li><strong>5. CAPRI</strong> – 3 PJ / 1 PG / 2 PP / 4 pts</li>
+                        <li><strong>6. Itapúa</strong> – 4 PJ / 0 PG / 4 PP / 4 pts</li>
+                        <li><strong>7. Luz y Fuerza</strong> – 2 PJ / 1 PG / 1 PP / 3 pts</li>
+                    </ul>
+                </section>
+            </article>
+            <article>
+                <h3>🏀 CAPRI brilla ante Itapúa y consigue su primer triunfo en el Torneo Apertura</h3>
+                <p><strong>Posadas, Misiones – 8 de septiembre de 2025</strong></p>
+
+                <p>En una noche cargada de energía juvenil y precisión táctica, el Club CAPRI logró su primera
+                    victoria en el Torneo Apertura de la Asociación Posadeña de Básquetbol (APBB), al vencer con
+                    contundencia a Itapúa Tenis Club por <strong>95 a 43</strong>. El encuentro, disputado el lunes
+                    por la cuarta fecha del certamen, dejó en claro el potencial de los U17 del Azzurro.</p>
+
+                <h3>🔥 Un inicio demoledor</h3>
+                <p>Desde el primer cuarto, CAPRI impuso su ritmo con transiciones rápidas y una defensa agresiva. El
+                    joven <strong>Tomás Richard</strong> fue la figura destacada del partido, anotando <strong>22
+                        puntos</strong> y liderando cada ofensiva con madurez y decisión. Acompañado por Cáceres y
+                    Benítez Cruz, el equipo mostró cohesión y hambre de victoria.</p>
+                <p>Por su parte, Itapúa intentó responder con el empuje de <strong>Giménez</strong>, quien aportó
+                    <strong>18 puntos</strong>, pero no logró frenar el vendaval ofensivo de CAPRI. Al cierre del
+                    primer tiempo, el marcador ya mostraba una diferencia significativa: <strong>49-24</strong>.
+                </p>
+                <p><img src="/img/APBB/capri_itc_apbb.png" alt="Mitre vs Los Pileteros - APBB Mayores" width="500">
+                </p>
+                <h3>🧱 Defensa, velocidad y contundencia</h3>
+                <p>En la segunda mitad, CAPRI mantuvo la intensidad. La defensa siguió asfixiando a Itapúa,
+                    generando robos que se transformaron en puntos fáciles. Ayala y Santander se sumaron al show
+                    ofensivo, mientras que el equipo rival se vio superado en todos los aspectos del juego.</p>
+                <p>El resultado final, <strong>95-43</strong>, no solo refleja el dominio de CAPRI, sino también el
+                    crecimiento de sus jóvenes talentos, que comienzan a dejar huella en el torneo.</p>
+                <p><img src="/img/APBB/itapua_capri_apbb.png" alt="Mitre vs Los Pileteros - APBB Mayores" width="500">
+                </p>
+                <h3>📊 Así está la tabla</h3>
+                <p>Con este triunfo, CAPRI suma <strong>4 puntos (1 victoria, 2 derrotas)</strong> y se posiciona
+                    junto a Brown, Tokio e Itapúa. Mitre lidera con <strong>6 puntos (3-0)</strong>, seguido por
+                    Villa Urquiza con <strong>5 puntos (2-1)</strong>.</p>
+            </article>
+            <article>
+                <h3>Vuelve la acción de la Asociación Posadeña de Básquetbol</h3>
+                <p>Este lunes <strong>8 de septiembre</strong>, la cita será en la cancha de <strong>CAPRI</strong>,
+                    donde
+                    <strong>Itapúa</strong> y <strong>CAPRI</strong> se enfrentarán en un nuevo capítulo del
+                    <strong>Torneo de la Asociación Posadeña de Básquetbol</strong>.
+                </p>
+
+                <p>Ambos equipos buscarán sumar una victoria importante para escalar en la tabla y seguir en la pelea
+                    por los primeros puestos, en lo que promete ser un partido vibrante de principio a fin.</p>
+
+                <p><strong>⏰ Hora:</strong> 21:30 hs<br>
+                    <strong>📍 Lugar:</strong> Cancha de CAPRI
+                </p>
+
+                <p><em>¡No te lo pierdas! Una noche a puro básquet en la capital misionera.</em></p>
+            </article>
+
+            <article>
+                <h3>Mitre se impone y sigue invicto en el certamen</h3>
+                <p>El conjunto <strong>Auriazul</strong> (3-0) no tuvo piedad y superó como local a <strong>Los
+                        Pileteros</strong> (0-3) por un contundente <strong>108-28</strong> en el cierre de la fecha 3
+                    del certamen capitalino.</p>
+
+                <p>Valentín Clara fue el máximo anotador del equipo ganador con <strong>22 puntos</strong>, mientras que
+                    Nicolás Sánchez aportó <strong>18 tantos</strong> para la visita. Con este resultado, los dirigidos
+                    por <strong>Miguel</strong> mantienen su invicto en el torneo, mientras que su rival sigue sin
+                    conocer la victoria.</p>
+
+                <p><img src="/img/APBB/img_itapua_mitre_apbb.png" alt="Mitre vs Los Pileteros - APBB Mayores"
+                        width="500">
+                </p>
+
+                <section>
+                    <h4>Posiciones – APBB Mayores</h4>
+                    <table border="1" cellpadding="6" cellspacing="0"
+                        style="border-collapse: collapse; text-align: center; width: 100%; max-width: 500px;">
+                        <thead style="background-color: #0c0c0c;">
+                            <tr>
+                                <th>Equipo</th>
+                                <th>Puntos</th>
+                                <th>Récord</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mitre</td>
+                                <td>6</td>
+                                <td>3-0</td>
+                            </tr>
+                            <tr>
+                                <td>Villa Urquiza</td>
+                                <td>5</td>
+                                <td>2-1</td>
+                            </tr>
+                            <tr>
+                                <td>Tokio</td>
+                                <td>4</td>
+                                <td>2-0</td>
+                            </tr>
+                            <tr>
+                                <td>Brown</td>
+                                <td>4</td>
+                                <td>1-2</td>
+                            </tr>
+                            <tr>
+                                <td>Luz y Fuerza</td>
+                                <td>3</td>
+                                <td>1-1</td>
+                            </tr>
+                            <tr>
+                                <td>Itapúa</td>
+                                <td>3</td>
+                                <td>0-3</td>
+                            </tr>
+                            <tr>
+                                <td>CAPRI</td>
+                                <td>2</td>
+                                <td>0-2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <p><em>Fotos: APBB</em></p>
+            </article>
+
+            <article>
+                <h3>Emoción en la jornada del martes 26 de agosto</h3>
+                <p>El <strong>Torneo Apertura 2025</strong> de la <strong>Asociación Posadeña de Básquetbol</strong>
+                    vivió una fecha vibrante el
+                    <strong>martes 26 de agosto de 2025</strong>, con dos partidos que mantuvieron en vilo a los
+                    fanáticos hasta el final.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Tokio 79 – 67 Brown</strong><br>
+                        El conjunto oriental impuso su ritmo desde el inicio, mostrando solidez defensiva y efectividad
+                        en ataque para quedarse con una victoria clara sobre Jorge Gibson Brown.
+                        📅 Próxima fecha: Tokio se enfrentará a CAPRI como visitante.
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Villa Urquiza 65 – 60 CAPRI</strong><br>
+                        En un partido muy parejo y definido en los últimos minutos, Villa Urquiza logró un triunfo clave
+                        frente al Azzurro, mostrando carácter en los momentos decisivos.
+                        📅 Próxima fecha: Villa Urquiza visitará a Brown.
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!--News Section Liga Nacional-->
+        <section id="liga-nacional" class="news-section">
+            <h2>Liga Nacional de Basquet</h2>
+            <article>
+                <h3>Oberá Tenis Club | Noticias destacadas</h3>
+
+                <h4>1. Fin de semana de amistosos ya confirmado</h4>
+                <p>El equipo se prepara con una serie de partidos amistosos de cara a la nueva temporada de la
+                    <strong>Liga Nacional</strong> y la <strong>Liga Sudamericana de Baloncesto</strong>.
+                    El sábado se enfrentará a <strong>Regatas</strong> en Ituzaingó (club Yacyretá), mientras que
+                    el domingo jugará ante <strong>La Unión de Formosa</strong>, ambos como visitante.
+                <p><img src="/img/Liga_Nacional/oberá2_2.jpg" alt="OTC amistosos pretemporada" width="500"></p>
+                Además, ya se están proyectando al menos dos amistosos más para la semana entrante.</p>
+                <p><img src="/img/Liga_Nacional/obera1_d1.jpg" alt="OTC amistosos pretemporada" width="500"></p>
+
+
+                <h4>2. Incorporaciones clave: refuerzos para fortalecer el plantel</h4>
+                <p>El pivote brasileño <strong>Pedro Ianguas</strong> ya se sumó al plantel y comenzó entrenamientos.
+                <p><img src="/img/Liga_Nacional/DSC_2321-300x200.jpg" alt="Nuevos refuerzos OTC" width="500"></p>
+                <p><a href="https://oberatenisclub.com.ar/" target="_blank">Fuente: Oberá Tenis Club</a></p>
+                También se agregaron <strong>Will Vorhees</strong> y <strong>Noah Allen</strong>, completando parte
+                del nuevo equipo de cara a la próxima campaña.</p>
+                <p><img src="/img/Liga_Nacional/WhatsApp-Image-2025-09-04-at-17.34.43-768x512.jpeg"
+                        alt="Nuevos refuerzos OTC" width="500"></p>
+
+
+                <h4>3. Continuidad técnica asegurada</h4>
+                <p>La dirigencia anunció la continuidad del entrenador <strong>Fabio Demti</strong>, quien asumirá
+                    su quinta temporada al frente del equipo. Esta renovación confirma estabilidad en el cuerpo técnico
+                    para el ciclo 2025–2026.</p>
+                <p><img src="/img/Liga_Nacional/DSC_1009-500x334.jpg" alt="Fabio Demti entrenador OTC" width="500"></p>
+
+
+                <h4>4. OTC rumbo a la Liga Sudamericana</h4>
+                <p>Luego de una notable campaña en la <strong>Liga Nacional</strong>, donde finalizaron en el cuarto
+                    lugar
+                    de la fase regular, OTC aseguró su pase a la próxima <strong>Liga Sudamericana de Clubes</strong>.
+                    Será su tercera participación en este torneo continental, consolidando su presencia internacional
+                    en el básquet sudamericano.</p>
+                <p><img src="/img/Liga_Nacional/LSB_WEB_header-768x368.jpg" alt="OTC en la Liga Sudamericana"
+                        width="500"></p>
+            </article>
+
+        </section>
+
+        <!-- News Section Seleccion-->
+        <section id="seleccion" class="news-section">
+            <h2>Selección Argentina</h2>
+            <article>
+                <h3>Brasil campeón de la FIBA AmeriCup 2025</h3>
+                <p>La <strong>FIBA AmeriCup 2025</strong> llegó a su desenlace en Managua con una final sudamericana
+                    intensa y de
+                    bajo goleo, donde <strong>Brasil</strong> superó a <strong>Argentina</strong> para conquistar su
+                    quinto título
+                    continental y el primero desde 2009.</p>
+                <p><img src="/img/Seleccion_Argentina/brasil-campeon.jpg"
+                        alt="Imagen representativa de la final AmeriCup 2025"> <img
+                        src="/img/Seleccion_Argentina/yago_mvp.jpg"
+                        alt="Imagen representativa de la final AmeriCup 2025"></p>
+                <p><strong>Resultado final:</strong></p>
+                <ul>
+                    <li><strong>Brasil 55-47 Argentina</strong> — Un duelo definido por la defensa y el ritmo impuesto
+                        por los brasileños desde el segundo cuarto. Yago dos Santos (MVP del torneo) lideró con 14
+                        puntos y 5 asistencias, Bruno Caboclo aportó 11 puntos y 7 rebotes, y Vitor Benite clavó un
+                        triple clave a falta de 1:53 para sellar la victoria. </li>
+                </ul>
+
+                <p>Argentina, bajo la dirección de Pablo Prigioni, buscaba retener el título obtenido en 2022, pero tuvo
+                    problemas ofensivos (con apenas 4/27 en triples) y no pudo quebrar la defensa brasileña. El marcador
+                    combinado (102 puntos) fue el más bajo registrado en la historia de una final de AmeriCup.
+                </p>
+
+                <h4>Camino a la final</h4>
+                <table border="1" cellpadding="6" cellspacing="0"
+                    style="border-collapse: collapse; text-align: center;">
+                    <thead style="background-color: #161615;">
+                        <tr>
+                            <th>Instancia</th>
+                            <th>Argentina</th>
+                            <th>Brasil</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cuartos de final</td>
+                            <td>Argentina 82-77 Puerto Rico (tiempo extra)</td>
+                            <td>Brasil 94-82 República Dominicana</td>
+                        </tr>
+                        <tr>
+                            <td>Semifinal</td>
+                            <td>Argentina 83-73 Canadá</td>
+                            <td>Brasil 92-77 Estados Unidos</td>
+                        </tr>
+                        <tr>
+                            <td>Final</td>
+                            <td>47</td>
+                            <td>55</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Estadísticas individuales destacadas (Final)</h4>
+                <table border="1" cellpadding="6" cellspacing="0"
+                    style="border-collapse: collapse; text-align: center;">
+                    <thead style="background-color: #161615;">
+                        <tr>
+                            <th>Jugador</th>
+                            <th>Equipo</th>
+                            <th>Puntos</th>
+                            <th>Rebotes</th>
+                            <th>Asistencias</th>
+                            <th>Bloqueos/Stl (cuando aplicable)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Yago dos Santos</td>
+                            <td>Brasil</td>
+                            <td>14</td>
+                            <td>—</td>
+                            <td>5</td>
+                            <td>— (MVP)</td>
+                        </tr>
+                        <tr>
+                            <td>Bruno Caboclo</td>
+                            <td>Brasil</td>
+                            <td>11</td>
+                            <td>7</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Vitor Benite</td>
+                            <td>Brasil</td>
+                            <td>8</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>Georginho De Paula</td>
+                            <td>Brasil</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>5 bloqueos (récord de final)</td>
+                        </tr>
+                        <tr>
+                            <td>Francisco Cáffaro</td>
+                            <td>Argentina</td>
+                            <td>11</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>José Vildoza</td>
+                            <td>Argentina</td>
+                            <td>8</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+                <p><a href="https://www.fiba.basketball/en/events/fiba-americup-2025/games/121422-ARG-BRA"
+                        target="_blank" style="text-decoration: none; color: rgb(223, 166, 82);">Resumen oficial en
+                        FIBA.basketball</a></p>
+
+                <p>Con esta victoria, Brasil obtuvo su quinto título AmeriCup (el primero desde 2009), mientras que
+                    Argentina cosechó su séptima medalla de plata y alcanzó su 15° podio histórico —el más en toda la
+                    historia del torneo.</p>
+                <p><img src="/img/Seleccion_Argentina/argentina-subcampeon.jpg"
+                        alt="Imagen representativa de la final AmeriCup 2025"></p>
+            </article>
+
+            <h3>FIBA AmeriCup 2025 – Semifinales</h3>
+
+            <article>
+                <h3>Argentina y Brasil definirán el título continental</h3>
+                <p>La <strong>FIBA AmeriCup 2025</strong> ya tiene a sus dos finalistas. En Managua, las semifinales
+                    dejaron dos partidos vibrantes que confirmaron el gran momento de las potencias sudamericanas.</p>
+
+                <p><strong>Resultados de semifinales:</strong></p>
+                <ul>
+                    <li><strong>Brasil 92-77 Estados Unidos</strong> — Remontada histórica: los brasileños firmaron un
+                        parcial de 31-4 en el último cuarto para sellar el pase a la final. <a
+                            href="https://www.youtube.com/watch?v=R538X_1gQ70&ab_channel=DSports" target="_blank"
+                            class="youtube-link"><i class="fab fa-youtube"></i></a></li>
+                    <li><strong>Argentina 83-73 Canadá</strong> — La Albiceleste frenó el invicto canadiense con un
+                        juego sólido en defensa y una ofensiva equilibrada. <a
+                            href="https://www.youtube.com/watch?v=wkJdyAz1tA8&ab_channel=DSports" target="_blank"
+                            class="youtube-link"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+
+                <p><img src="https://assets.fiba.basketball/image/upload/f_svg/v1740521264/.asset_mainlogo--competition_208811"
+                        alt="Logo oficial FIBA AmeriCup 2025" width="300"></p>
+                <p><a href="https://www.fiba.basketball/en/events/fiba-americup-2025" target="_blank"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Más información en
+                        FIBA.basketball</a></p>
+
+                <p>Con estos resultados, <strong>Argentina y Brasil</strong> jugarán la gran final por el título
+                    continental, mientras que <strong>Canadá y Estados Unidos</strong> definirán el tercer puesto. Ambos
+                    encuentros se disputarán en el Polideportivo Alexis Argüello, Managua.</p>
+            </article>
+
+            <article>
+                <h3>Final y partido por el tercer puesto</h3>
+                <p><strong>Programación (hora local Managua):</strong></p>
+                <ul>
+                    <li><strong>3.er puesto:</strong> Canadá vs. Estados Unidos – 31 de agosto, 17:10</li>
+                    <li><strong>Final:</strong> Argentina vs. Brasil – 31 de agosto, 20:10</li>
+                </ul>
+                <p>La gran final promete un duelo de alto voltaje entre dos selecciones históricas, mientras que el
+                    clásico norteamericano buscará cerrar con un podio el certamen.</p>
+            </article>
+            <article>
+                <h3>FIBA AmeriCup 2025: definidos los cuartos de final y primeros resultados</h3>
+                <p>La fase de grupos terminó en Managua y se definieron los emparejamientos de los cuartos de final para
+                    la <strong>FIBA AmeriCup 2025</strong>. Aunque aún restan varios partidos por disputarse, ya se
+                    registraron los primeros resultados impactantes.</p>
+
+                <ul>
+                    <li>Canadá (1) vs. Colombia (8)</li>
+                    <li>Puerto Rico (4) vs. Argentina (5)</li>
+                    <li>Estados Unidos (3) vs. Uruguay (6)</li>
+                    <li>República Dominicana (2) vs. Brasil (7)</li>
+                </ul>
+
+                <p><strong>Resultados conocidos (Cuartos de Final):</strong></p>
+                <ul>
+                    <li>República Dominicana 82-94 Brasil — Brasil avanza a semis.</li>
+                    <li>Puerto Rico 77-82 Argentina (tiempo extra) — Argentina avanza a semifinales tras una remontada
+                        espectacular liderada por Juan Fernández (18 puntos y 8 tapones) y José Vildoza (18 puntos y
+                        triples
+                        decisivos).</li>
+                </ul>
+
+                <p><img src="https://assets.fiba.basketball/image/upload/f_svg/v1740521264/.asset_mainlogo--competition_208811"
+                        alt="Logo oficial FIBA AmeriCup 2025" width="300"></p>
+
+
+                <p>En semifinales, Argentina enfrentará hoy, sábado 30 de agosto a las 21:10 (hora argentina), a
+                    <strong>Canadá</strong> en el Polideportivo Alexis Argüello de Managua. El partido se podrá ver en
+                    vivo
+                    por <strong>TyC Sports</strong> y <strong>DSports</strong>. El ganador disputará la gran final de la
+                    AmeriCup 2025.
+                </p>
+            </article>
+
+            <article>
+                <h3>Victoria agónica y clasificación a cuartos de final</h3>
+
+                <img src="https://s.yimg.com/ny/api/res/1.2/r2jI5xmmK5Q8A87sVShomQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjg7Y2Y9d2VicA--/https%3A//media.zenfs.com/es/lanacion.com.ar/e72022ac5d07ecc146b96ebcff7a7d20"
+                    alt="Comunicado de sanciones FIBA AmeriCup 2025">
+                <p>En su siguiente partido, Argentina logró una victoria casi milagrosa ante Colombia: con un doble en
+                    la última posesión de Nicolás Brussino, la Albiceleste ganó 84-83 y clasificó a los cuartos de final
+                    de la AmeriCup 2025 (<a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">El
+                        Destape</a>, <a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">Olé</a>).</p>
+                <p>Este triunfo coloca a Argentina segunda en el Grupo C y a la espera de conocer su próximo rival
+                    (posiblemente Canadá o Puerto Rico) (<a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">El Destape</a>).</p>
+                <img src="https://www.ole.com.ar/2025/08/25/gCkFMwXb-_400x400__1.jpg"
+                    alt="Nicolás Brussino anota el doble decisivo contra Colombia">
+            </article>
+            <article>
+                <h3>Ajustada derrota y pelea al cierre del partido</h3>
+                <img src="https://www.ellitoral.com/images/2025/08/24/aISrUaDFX_1300x655__1.jpg"
+                    alt="Tensión tras Argentina vs República Dominicana  AmeriCup 2025">
+                <p>El 24 de agosto de 2025, Argentina perdió contra República Dominicana por 84-83 en tiempo
+                    suplementario, en un partido cargado de tensión y emociones (<a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Diario AS</a>, <a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Ámbito</a>).</p>
+                <p>Tras el encuentro, se desató una pelea entre jugadores de ambos equipos (<a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Diario AS</a>,
+                    <a href="#" style="text-decoration: none; color: rgb(223, 166, 82);">Ámbito</a>).
+                </p>
+            </article>
+
+            <article>
+                <h3>Sanciones disciplinarias impuestas por FIBA</h3>
+                <img src="https://s.yimg.com/ny/api/res/1.2/r2jI5xmmK5Q8A87sVShomQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjg7Y2Y9d2VicA--/https%3A//media.zenfs.com/es/lanacion.com.ar/e72022ac5d07ecc146b96ebcff7a7d20"
+                    alt="Comunicado de sanciones FIBA AmeriCup 2025">
+                <p>El Panel Disciplinario de FIBA, tras analizar los incidentes ocurridos tras el partido del 24 de
+                    agosto en Managua, impuso las siguientes sanciones (<a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">fiba.basketball</a>, <a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">San
+                        Antonio Express-News</a>, <a href="#"
+                        style="text-decoration: none; color: rgb(223, 166, 82);">Todo Noticias</a>):</p>
+                <ul>
+                    <li><strong>Selección Argentina:</strong> Gonzalo Bressan: suspendido por dos partidos oficiales
+                        FIBA. Francisco Caffaro y Juan Vaulet: suspendidos por un partido cada uno. Pablo Prigioni
+                        (entrenador): multado con 2.000 francos suizos (~USD 2.500). Federación Argentina de Básquet:
+                        multa de 20.000 francos suizos (10.000 en suspenso por tres años).</li>
+                    <li><strong>República Dominicana:</strong> David Jones-García: suspendido por dos partidos oficiales
+                        FIBA. Juan Guerrero y Juan Suero: un partido de suspensión cada uno. Ángel Delgado: suspendido
+                        un partido con periodo probatorio de tres años. Federación Dominicana de Baloncesto: multa de
+                        20.000 francos suizos (10.000 en suspenso por tres años).</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2>Contacto</h2>
+            <p>Si tenés alguna pregunta, no dudes en contactarnos.</p>
+            <form id="contact" action="https://formsubmit.co/devweb.diseno@gmail.com" method="POST"
+                class="contact-form">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <!-- Evita spam (opcional) -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none">
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Basquet TV - Todos los derechos reservados</p>
+        <div class="social-icons">
+            <a href="#" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/@Basquet-TV" aria-label="YouTube" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/basquet.tv/" aria-label="Instagram" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5493764730666?text=Hola,%20Quiero%20cotizar%20un%20Servicio%20de%20Transmisión"
+                aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:consultas@basquettv.uno" aria-label="Email" target="_blank"><i
+                    class="fas fa-envelope"></i></a>
+        </div>
+        <p>Desarrollado por <a href="https://devweb.uno/" target="_blank" title="DevWeb"><img
+                    src="/img/LOGOS/LOGO DEVWEBS.png" alt="DevWeb Logo"></a></p>
+    </footer>
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5493764730666?text=Hola,%20Quiero%20cotizar%20un%20Servicio%20de%20Transmisión"
+        class="whatsapp-btn" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script src="/js/burguer.js"></script>
+    <script src="js/carrousel.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

@@ -72,3 +72,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const menu = document.getElementById('liga-select');
+
+    if (menu) {
+        menu.addEventListener('change', function () {
+            const sectionId = this.value;
+            if (sectionId) {
+                document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
+});
