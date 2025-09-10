@@ -382,12 +382,12 @@ section {
 }
 
 .fade {
-  animation: fade 1.5s;
+  animation: fade 3s ease-in-out;
 }
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0;
   }
 
   to {
