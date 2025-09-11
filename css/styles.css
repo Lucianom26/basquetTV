@@ -21,7 +21,7 @@ html {
 body {
   font-family: 'PT Sans', sans-serif;
   background: #d9402b;
-background: linear-gradient(86deg, rgb(194, 59, 41) 0%, rgba(69, 69, 115, 1) 38%, rgba(157, 191, 199, 1) 100%);
+  background: linear-gradient(86deg, rgb(194, 59, 41) 0%, rgba(69, 69, 115, 1) 38%, rgba(157, 191, 199, 1) 100%);
   color: var(--text-color);
   line-height: 1.6;
 }
@@ -36,10 +36,12 @@ h6 {
   margin-bottom: 1rem;
   color: var(--text-color);
 }
-a{
+
+a {
   text-decoration: none;
   color: var(--text-color)
 }
+
 p {
   margin-bottom: 1rem;
   color: var(--text-color);
@@ -102,10 +104,16 @@ p {
 /* Header */
 header {
   background: var(--body-bg);
-  ;
   padding: 10px 0;
   border-bottom: 3px solid var(--primary-color);
   text-align: center;
+}
+
+.webp header {
+  background-image: url(/img/detalles-de-la-pelota-en-el-deporte.webp);
+}
+.no-webp header {
+  background-image: url(/img/detalles-de-la-pelota-en-el-deporte.jpg);
 }
 
 .logo-container img.logo {
