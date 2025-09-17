@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="icon" href="/img/pelota-basquet.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -65,41 +65,64 @@
 
     <main>
         <!--Noticias-Slide-->
-        <section id="highlights" class="highlights-section">
+        <section id="portfolio" class="portfolio">
             <h2>Noticias</h2>
-            <p>Disfrutá de las mejores imágenes de partidos y eventos destacados.</p>
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">Liga Nacional</div>
-                    <img src="/img/Liga_Nacional/obera1_d1.jpg" alt="Imagen 1" loading="lazy">
-                    <div class="text"><a href="#liga-nacional">Puesta a punto del Celeste para la Liga</a></div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">Pre Federal - FMBB</div>
-                    <img src="/img/FMBB/PreFederal/3ra_fecha_prefederal.jpg"
-                        alt="Imagen 2" loading="lazy">
-                    <div class="text"><a href="#fmbb">Tirica, Capri y El Coatí serán locales en la 3ra. fecha </a></div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">Femenino - FMBB</div>
-                    <img src="/img/FMBB/Femenino/tokio_final_femenina.png"
+            <p>Infórmate sobre las novedades de los mejores partidos y eventos destacados.</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Proyecto 1 -->
+                    <div class="swiper-slide">
+                        <div class="portfolio-item">
+                            <img src="/img/Liga_Nacional/obera1_d1.jpg" alt="Imagen 1" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <h3>Liga Nacional</h3>
+                                <p>Puesta a punto del Celeste para la Liga</p>
+                                <a href="#liga-nacional" class="button">Leer Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="swiper-slide">
+                        <div class="portfolio-item">
+                            <img src="/img/FMBB/PreFederal/3ra_fecha_prefederal.jpg">
+                            <div class="portfolio-overlay">
+                                <h3>Pre Federal - FMBB</h3>
+                                <p>Tirica, Capri y El Coatí serán locales en la 3ra. fecha </p>
+                                <a href="#fmbb" class="button">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 3 -->
+                    <div class="swiper-slide">
+                        <div class="portfolio-item">
+                              <img src="/img/FMBB/Femenino/tokio_final_femenina.png"
                         alt="Imagen 3" loading="lazy">
-                    <div class="text"><a href="#femenino">Tokio se quedó con el primero 🏀</a></div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">Torneo Local - APBB</div>
-                    <img src="/img/APBB/luzyfuerza_brown.jpg"
+                            <div class="portfolio-overlay">
+                                <h3>Femenino - FMBB</h3>
+                                <p>Tokio se quedó con el primero</p>
+                                <a href="#femenino" class="button">Leer Más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proyecto 4 -->
+                    <div class="swiper-slide">
+                        <div class="portfolio-item">
+                            <img src="/img/APBB/luzyfuerza_brown.jpg"
                         alt="Imagen 3" loading="lazy">
-                    <div class="text"><a href="#apbb">Luz y Fuerza recibe a Brown en un duelo clave por el Torneo Apertura</a></div>
+                            <div class="portfolio-overlay">
+                                <h3>Torneo Local - APBB</h3>
+                                <p>Luz y Fuerza recibe a Brown en un duelo clave por el Torneo Apertura</p>
+                                <a href="#apbb" class="button">Leer Más</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="dots-container">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
+                <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+                <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
+        
         <!-- Sponsors Section -->
         <div class="slider">
             <div class="slide-track">
@@ -496,7 +519,8 @@
                     <p>El Verdirrojo, por su parte, viene de una victoria importante y buscará aprovechar el envión
                         anímico para sumar fuera de casa. Con jugadores como <strong>Rodrigo Méndez</strong> y
                         <strong>Lucas Sosa</strong> en gran nivel, Brown apunta a consolidarse en la zona media de la
-                        tabla y meterse en la conversación por los puestos de arriba.</p>
+                        tabla y meterse en la conversación por los puestos de arriba.
+                    </p>
 
                     <h3>🎟️ Entrada libre y clima de clásico</h3>
                     <p>Se espera una gran concurrencia en el estadio de Luz y Fuerza, con entrada libre y gratuita. El

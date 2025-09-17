@@ -112,6 +112,7 @@ header {
 .webp header {
   background-image: url(/img/detalles-de-la-pelota-en-el-deporte.webp);
 }
+
 .no-webp header {
   background-image: url(/img/detalles-de-la-pelota-en-el-deporte.jpg);
 }
@@ -320,88 +321,194 @@ section {
 }
 
 /* Gallery */
-.mySlides {
-  display: none;
+/* Portafolio */
+.portfolio {
+  max-width: 70rem;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
 }
 
-.slideshow-container {
-  max-width: 1000px;
+.portfolio h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-item {
   position: relative;
-  margin: auto;
+  border-radius: 10px;
   overflow: hidden;
-  /* Evita que las imágenes se salgan del contenedor */
-  border-radius: 10px;
-  /* Opcional, para que coincida con el diseño */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  /* Opcional, para darle un poco de profundidad */
 }
 
-.mySlides img {
+.portfolio-item img {
   width: 100%;
-  height: 500px;
-  /* Ajusta la altura según sea necesario */
-  display: block;
-  border-radius: 10px;
+  height: 100%;
   object-fit: cover;
-  /* Para que la imagen cubra el espacio sin deformarse */
+  transition: transform 0.5s;
 }
 
-.numbertext,
-.text {
+.portfolio-overlay {
   position: absolute;
-  color: #f2f2f2;
-  padding: 8px 12px;
-  width: 100%;
-  text-align: center;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
-  box-sizing: border-box;
-}
-
-.numbertext {
   top: 0;
-  font-size: 20px;
-}
-
-.text {
-  bottom: 0;
-  font-size: 20px;
-  background: rgba(0, 0, 0, 0.4);
-  /* Fondo semitransparente para el texto */
-}
-
-.dots-container {
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(191, 191, 194, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+  padding: 1rem;
   text-align: center;
-  margin: 10px 0;
+  color: var(--dark);
 }
 
-.dot {
-  height: 15px;
-  width: 15px;
-  background-color: #bbb;
-  border-radius: 50%;
-  margin: 0 4px;
-  display: inline-block;
+.portfolio-item:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #161616;
+}
+
+.portfolio-overlay p {
+  margin-bottom: 1rem;
+  color: #121212;
+}
+
+/* Estilos mínimos de Swiper */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--nav-bg);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
   cursor: pointer;
-  transition: background-color 0.6s ease;
+  font-size: 24px;
 }
 
-.dot.active {
-  background-color: #717171;
+.swiper-button-next:hover {
+  color: var(--text-color);
 }
 
-.fade {
-  animation: fade 3s ease-in-out;
+.swiper-button-prev:hover {
+  color: var(--text-color);
 }
 
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
+.swiper-button-next {
+  right: 10px;
 }
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--link-hover-bg);
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet.active {
+  background: var(--text-color);
+}
+
+/* Carrusel Swiper */
+
+.portfolio-item {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+  height: 400px;
+  /* Altura fija para uniformidad */
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+
+}
+
+
+/* Ajustes para las imágenes del portafolio */
+.portfolio-item img {
+  width: 100%;
+  height: 400px;
+  /* Altura fija para uniformidad */
+  object-fit: contain;
+  /* Mantiene relación de aspecto sin recortar */
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 4px solid var(--primary-color);
+  /* Fondo neutro para logos transparentes */
+  padding: 1rem;
+  /* Espacio alrededor del logo */
+
+
+}
+
+/* Efecto hover más suave */
+.portfolio-item:hover img {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* Estilos para múltiples botones en el overlay */
+.portfolio-overlay {
+  display: flex;
+  flex-direction: column;
+  /* Apila los botones verticalmente */
+  gap: 10px;
+  /* Espacio entre botones */
+  align-items: center;
+  justify-content: center;
+}
+
 
 /* YouTube links */
 .youtube-link {
@@ -914,26 +1021,6 @@ footer a img {
   .contact-form input,
   .contact-form textarea {
     width: 100%;
-  }
-
-  .slideshow-container {
-    width: 100%;
-  }
-
-  .mySlides img {
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-  }
-
-  .text {
-    font-size: 0.9em;
-  }
-
-  .video-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   footer {
